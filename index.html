@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="prefetch">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Docket</title>
+</head>
+
+<body>
+    <div class="box">
+
+        <div class="header">
+            <div id="capa">
+                <div id="logo"></div>
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="card">
+
+                <h2>Venha trabalhar na Docket</h2>
+                <p>Preencha o formulário abaixo e venha trabalhar em uma das startups mais desejadas do Brasil!</p>
+                <h4>Dados pessoais</h4>
+                <form id="js-form" action="">
+
+                    <div class="data">
+                        <label class="row"><div class = "asterisk">*</div><p>Nome completo:</p></label>
+                        <input id="name" required type="text" placeholder="Nome Sobrenome" class="inp">
+                        <div class="msg">Mensagem de Feedback</div>
+                    </div>
+
+                    <div class="data">
+                        <label class="row"><div class = "asterisk">*</div><p>E-mail:</p></label>
+                        <input id="email" required type="text" placeholder="seunome@sobrenome.com.br" class="inp">
+                        <div class="msg">Mensagem de Feedback</div>
+                    </div>
+
+                    <div class="numbers">
+                        <div class="data">
+                            <label class="row"><div class = "asterisk">*</div><p>Telefone 1:</p></label>
+                            <input id="number1" required type="text" onkeypress="complete(this)" placeholder="(88)8888-8888" class="inpnumber">
+                            <div class="msg">Mensagem de Feedback</div>
+                        </div>
+
+                        <div class="data">
+                            <label class="row"><div class = "asterisk">*</div><p>Telefone 2:</p></label>
+                            <input id="number2" onkeypress="complete(this)" type="text" placeholder="(88)8888-8888" class="inpnumber">
+                            <div class="msg">Mensagem de Feedback</div>
+                        </div>
+                    </div>
+
+                    <button class="btn" type="submit"><p id = "sub">Enviar</p></button>
+                </form>
+            </div>
+
+            <div id="card2" class="card2">
+                <div class="shadow"></div>
+                <h3>ficha do candidato</h3>
+
+                <div id="js-text">
+                    <p class="before">Preencha o formulário e clique em "Enviar" após conferir atentamente.</p>
+                </div>
+
+                <div class="container">
+                    <div class="title">
+                        <h4>Seus projetos:</h4>
+                    </div>
+
+                    <div class="show">
+                        <button onclick="exchange()" class="exchangebtn"></button>
+                        <div id="js-carrossel" class="carrossel"></div>
+                        <div id="js-carrossel1" class="carrossel"></div>
+                        <button class="exchangebtn1" onclick="exchange()"></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h4>DOCKET © 2019</h4>
+        </div>
+
+        <script async src="./js/carrossel.js"></script>
+        <script async src="./js/form.js"></script>
+        <script src="./js/numbers.js"></script>
+
+</body>
+
+</html>
